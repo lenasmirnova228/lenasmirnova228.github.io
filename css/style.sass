@@ -1,0 +1,49 @@
+@import url("fonts/_fonts.css")
+
+$lightblue: #000899
+$darkblue: #010451
+$creamcolor: #F0DCA7
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: "Open Sans"
+    color: $creamcolor
+    text-decoration: none
+.main
+    min-height: 100vh
+    background: radial-gradient($lightblue, $darkblue)
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .theme
+        display: flex
+        justify-content: space-around
+        text-align: center
+        flex: 1
+        .theme__title
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-basis: 40%
+            border: 1px solid $creamcolor
+            padding: 10px
+            font-size: 28px
+            font-weight: 800
+            box-shadow: inset 0 0 5px #000
+        a.theme__price
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-basis: 12%
+            border: 1px solid $creamcolor
+            font-size: 34px
+            box-shadow: inset 0 0 5px #000
+            transition: .25s
+            font-weight: 800
+            &:hover
+                box-shadow: none
+                background: rgba(255,255,255,0.3)
+            &:visited
+                color: #303030
